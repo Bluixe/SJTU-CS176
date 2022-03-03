@@ -1,0 +1,274 @@
+html,body{
+	/* height: 100px; */
+    margin:0;
+    overflow: hidden hidden;
+}
+
+/* * {
+    margin:0;
+    padding: 0;
+} */
+
+/* a{
+    color:black
+} */
+.header{
+    position:absolute;
+    top:0%;
+    height:8%;
+    width: 100%;
+    z-index: 100;
+    background:#dcdede;
+}
+
+.head{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0%;
+    top: 0%;
+	background: url("https://bluixe-cloudimg.oss-cn-shanghai.aliyuncs.com/img/watercolor-4116932.png") no-repeat center/cover,
+    #e9edec
+}
+
+#s2 {
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+#s2:hover {
+    transform: translateY(-50px);
+}
+@keyframes slidein {
+    50% {
+        opacity: 40%;
+    }
+}
+/* 
+ul .list > div{
+    position:absolute;
+} */
+
+/* .list > div{
+    transition: 1s top;
+} */
+
+
+.list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    /* max-height: 600px; */
+    position: absolute;
+    top: 0%;
+    transition: 1s top;
+}
+
+
+.second{
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background: #e9edec;
+    overflow: hidden hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: bisque; */
+}
+.third{
+    position: absolute;
+    top: 200%;
+    height: 100%;
+    width: 100%;
+    background: #e9edec;
+    /* background-color: beige; */
+    
+}
+
+.third #box1{
+    position:absolute;
+    bottom:29%;
+}
+.third #box2 {
+    position:absolute;
+    bottom:29%;
+}
+
+.third #image_container{
+    position: absolute;
+    width:100%;
+    bottom:34%;
+    display: flex;
+    justify-content: center;
+}
+.third #image {
+    transform: translateX(-250%);
+    animation-duration: 10s;
+    animation-name: train;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 25%;
+}
+@keyframes train {
+    100% {
+        transform: translateX(250%);
+    }
+}
+.head #arrow {
+    position: absolute;
+    top:83%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.second .band {
+    position: absolute;
+    top: 54%;
+    width: 100%;
+    height: 6%;
+    background-color: #949494;
+}
+.second .band2 {
+    position: absolute;
+    top: 62%;
+    width: 100%;
+    height: 2%;
+    background-color: #949494;
+}
+
+.second .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /* max-width: 3000px; */
+    margin: 40px 0;
+}
+/* .second .what {
+    background-color: #2196f3;
+    width:100%;
+} */
+
+.second .container .card {
+    position: relative;
+    width: 15%;
+    height: 45%;
+    min-width: 200px;
+    min-height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 2%;
+    transition: .5s;
+}
+
+.second .container .card:nth-child(1) .box .content a {
+    background: #2196f3
+}
+
+.second .container .card:nth-child(2) .box .content a {
+    background: #e91e63;
+}
+
+.second .container .card:nth-child(3) .box .content a {
+    background: #23c186;
+}
+
+.second .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #484950;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.second .container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+.second .container .card .box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.second .container .card .box .content {
+    padding: 20px;
+    text-align: center
+}
+
+.second .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.second .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.second .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.second .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+.second .container .card .box .content a:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+#text{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'FZYaoti';
+        font-size: 300%;
+        color:white;
+        text-align: center;
+}
+
+
