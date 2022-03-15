@@ -10,3 +10,8 @@ Homework 2 （1.0版本）
 
 部署：http://home.bluixe.cn
 
+#### 2022/3/11
+
+Homework 3
+
+部署：https://bluixe.cn/game/beans/
