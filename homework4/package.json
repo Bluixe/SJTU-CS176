@@ -7,7 +7,8 @@
     "build": "modern build",
     "start": "modern start",
     "new": "modern new",
-    "lint": "modern lint"
+    "lint": "modern lint",
+    "deploy": "modern deploy"
   },
   "engines": {
     "node": ">=14.17.6"
@@ -45,7 +46,8 @@
     "@modern-js/app-tools": "^1.0.0",
     "@modern-js/plugin-jarvis": "^1.0.0",
     "classnames": "^2.3.1",
-    "del-cli": "^4.0.1"
+    "del-cli": "^4.0.1",
+    "@modern-js/plugin-cdn-oss": "1.1.3"
   },
   "modernConfig": {
     "runtime": {
