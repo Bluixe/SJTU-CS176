@@ -27,6 +27,7 @@ export const Utils = {
   },
 
   store(namespace, data) {
+    // 兼具读写功能
     if (data) {
       return localStorage.setItem(namespace, JSON.stringify(data));
     }
