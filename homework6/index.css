@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 10px;
+    background-color: #040404;
+    border-bottom: 1px solid rgba(78,202,255,.3);
+    border-image-slice: 10%;
+}
+
+.navbar_head {
+    padding: 0 16px;
+}
+
+.navbar_btn {
+    padding: 2px 6px;
+    color: aliceblue;
+    display: none;
+}
+
+.navbar_item {
+    color:aliceblue;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.hero{
+    background: url("./img/bg.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    color:aliceblue;
+}
+
+.hero_item{
+    display: flex;
+    flex-direction: column;
+    margin:10rem 20%;
+    width: 40rem;
+    /* max-width: 100vw; */
+}
+
+.buttons_AeoN {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 60px;
+}
+
+a {
+    text-decoration:none;
+}
+.footer {
+    display: flex;
+    border-top: 1px solid rgba(78,202,255,.3);
+    /* width: 100vw; */
+    /* height: 5rem; */
+    background-color: #000;
+    justify-content: center;
+    padding: 2rem;
+    /* overflow: hidden hidden; */
+}
+.start_RUNT {
+    background: linear-gradient(274.85deg,#4ecaff 3%,#64cfde 97.17%);
+    border-radius: 39px;
+    box-shadow: 0 1px 39px rgb(133 250 202 / 34%);
+    display: flex;
+    height: 48px;
+    color:#040404;
+    justify-content: center;
+    line-height: 48px;
+    opacity: .8;
+    width: 147px;
+}
+
+.doc-btn_gVIP {
+    align-items: center;
+    background: hsla(0,0%,100%,.07);
+    border: 1px solid #4ecaff;
+    border-radius: 39px;
+    box-sizing: border-box;
+    color: #4ecaff;
+    cursor: pointer;
+    display: flex;
+    height: 49px;
+    justify-content: center;
+    margin-left: 32px;
+    transition: .3s;
+    width: 130px;
+}
+
+.title_GqtP{
+    font-size: 3.5rem;
+}
+
+.hero .logo{
+    /* display: flex; */
+    width: 30rem;
+    /* max-width: 100%; */
+}
+
+.swipper {
+    background-color: #000;
+    border-bottom: 1px solid rgba(78,202,255,.3);
+    border-top: 1px solid rgba(78,202,255,.3);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    color:aliceblue;
+    height: 60px;
+}
+
+.swipper-wrapper{
+    display: flex;
+
+}
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    line-height: 56px;
+    /* padding: 0 20px; */
+    width: 20vw;
+}
+.slide:hover{
+    background-color: #555;
+}
+.mainpage{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #000;
+    color:aliceblue
+
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 5rem 0; */
+}
+
+.cardlist {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+}
+
+.card {
+    background: hsla(0,0%,100%,.1);
+    border: 1px solid hsla(0,0%,100%,.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex: 1 1 32%;
+    height: 135px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    max-width: 30rem;
+    min-width: 20rem;
+    padding: 0 35.4px;
+    transition: .3s;
+    text-align: left;
+    align-items: center;
+}
+
+@media (max-width: 966px){
+    .navbar_btn{
+        display: inherit;
+    }
+    .navbar_item{
+        display: none;
+    }
+    .hero{
+        background: url("./img/banner-mobile-bg.png");
+        background-size: cover;
+        background-position: bottom;
+        
+    }
+    .hero_item{
+        width:80%;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    }
+    .hero .logo{
+        width:65%;
+    }
+    .title_GqtP{
+        font-size: 6vw;
+    }
+    .buttons_AeoN {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        width: 65%;
+    }
+    .start_RUNT{
+        width: 100%;
+    }
+    .doc-btn_gVIP {
+        margin-left: 0;
+        margin-top: 42px;
+        width: 100%;
+    }
+    .slide.hide{
+        display: none;
+    }
+    .cardlist{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        flex: none;
+        height: 70px;
+        margin: 0 0 12px;
+        padding: 0 31px;
+        width: 120%;
+    }
+}
